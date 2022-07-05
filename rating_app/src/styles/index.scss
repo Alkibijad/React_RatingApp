@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(192, 192, 192);
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.App {
+  border: 1px solid red;
+  width: 800px;
+  height: 100vh;
+  margin: 0 auto;
+}
+.header_list {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  li {
+    margin: 10px;
+    a {
+      font-size: 20px;
+   
+      
+    }
+  }
+}
