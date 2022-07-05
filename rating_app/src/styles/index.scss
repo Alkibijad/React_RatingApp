@@ -29,15 +29,26 @@ a {
     margin: 10px;
     a {
       font-size: 20px;
-   
-      
     }
   }
 }
 
-.average_num{
-    border: 1px solid red;
-    text-align: center;
-    font-size: 30px;
-    padding: 50px;
+.average_num {
+  border: 1px solid red;
+  text-align: center;
+  font-size: 30px;
+  padding: 50px;
+}
+
+.rating_text {
+  text-align: center;
+  margin-top: 50px;
+  .single_rate {
+    box-shadow: 0px 0px 10px 5px grey;
+    width: 80%;
+    margin:  0 auto;
+    padding: 20px;
+   
+
+  }
 }

@@ -20,7 +20,7 @@ function App() {
 
       <Routes>
         <Route path="/AvarageRate" element={<AverageRate feedback={feedback } />} />
-        <Route path="/RatingText" element={<RatingText />} />
+        <Route path="/RatingText" element={<RatingText feedback={ feedback} />} />
         <Route path="/Ratings" element={<Ratings feedback={feedback } />} />
       </Routes>
     </div>
