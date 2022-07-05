@@ -29,6 +29,7 @@ a {
     margin: 10px;
     a {
       font-size: 20px;
+     
     }
   }
 }
@@ -51,4 +52,9 @@ a {
    
 
   }
+}
+
+.delete_rate:hover{
+  transform: scale(1.7);
+  color: white;
 }

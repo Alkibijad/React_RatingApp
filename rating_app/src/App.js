@@ -10,18 +10,33 @@ import FeedbackData from "./feedbackData/Feedback";
 import { useState } from "react";
 
 function App() {
-
-
   const [feedback, setFeedback] = useState(FeedbackData);
+
+  function deleteFeedback(id) {
+    if (window.confirm("Are you sure")) {
+      setFeedback(feedback.filter((item) => item.id !== id));
+    }
+  }
 
   return (
     <div className="App">
       <Navbar />
 
       <Routes>
-        <Route path="/AvarageRate" element={<AverageRate feedback={feedback } />} />
-        <Route path="/RatingText" element={<RatingText feedback={ feedback} />} />
-        <Route path="/Ratings" element={<Ratings feedback={feedback } />} />
+        <Route
+          path="/AvarageRate"
+          element={<AverageRate feedback={feedback} />}
+        />
+        <Route
+          path="/RatingText"
+          element={<RatingText feedback={feedback} />}
+        />
+        <Route
+          path="/Ratings"
+          element={
+            <Ratings feedback={feedback} handleDelete={deleteFeedback} />
+          }
+        />
       </Routes>
     </div>
   );

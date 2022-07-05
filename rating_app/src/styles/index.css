@@ -52,4 +52,9 @@ a {
   width: 80%;
   margin: 0 auto;
   padding: 20px;
+}
+
+.delete_rate:hover {
+  transform: scale(1.7);
+  color: white;
 }/*# sourceMappingURL=index.css.map */

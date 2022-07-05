@@ -15,7 +15,7 @@ const FeedbackData = [
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, consequatur",
     },
     {
-      id: 7,
+      id: 4,
       rating: 9,
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, consequatur",
     },
