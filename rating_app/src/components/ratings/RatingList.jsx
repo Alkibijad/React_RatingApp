@@ -1,11 +1,8 @@
 import React from "react";
-import { useState } from "react";
-import FeedbackData from "../../feedbackData/Feedback";
+
 import RatingItem from "./RatingItem";
 
-function Ratings() {
-  const [feedback, setFeedback] = useState(FeedbackData);
-
+function Ratings({ feedback }) {
   return (
     <div>
       {feedback.map((item) => {
