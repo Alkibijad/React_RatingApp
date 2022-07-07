@@ -1,4 +1,5 @@
 import React from "react";
+import { v4 as uuidV4 } from "uuid"  
 import FeedbackNumbers from "./FeedbackNumbers";
 import Feedbacktext from "./Feedbacktext";
 import FeedbackSubmit from "./FeedbackSubmit";
@@ -13,9 +14,8 @@ function Feedback() {
   const [isClicked, setIsClicked] = useState(false);
 
   useEffect(() => {
-    let rand = Math.random(Math.floor() * 1000000);
     let newFeedback = {
-      id: rand,
+      id: uuidV4(),
       rating: number,
       text: text,
     };
