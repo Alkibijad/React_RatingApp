@@ -19,14 +19,20 @@ function AverageRate({ feedback }) {
   let average = feedback.reduce((acc, cur) => {
     return acc + cur.rating
   }, 0) / feedback.length
+
+  average = average.toFixed(1).replace(/[.,]0$/,'')
   
 
 
   return (
     <div className="average_num">
-      <p>The average num of your ratings is {average}</p>
+      <p>The average num of your ratings is {isNaN(average)? 0 : average}</p>
     </div>
   );
 }
 
 export default AverageRate;
+
+
+//this component is showing avarage rate number 
+// in navbar this Avarage rate component

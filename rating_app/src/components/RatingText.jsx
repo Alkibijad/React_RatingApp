@@ -11,3 +11,7 @@ function RatingText({ feedback}) {
 }
 
 export default RatingText
+
+
+// this component is displaying feedback text only
+// in navbar this is Rating Text 

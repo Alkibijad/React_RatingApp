@@ -57,4 +57,15 @@ a {
 .delete_rate:hover {
   transform: scale(1.7);
   color: white;
+}
+
+.addFeedback_container {
+  border: 1px solid red;
+  padding: 50px;
+}
+.addFeedback_container h2 {
+  margin: 10px 0;
+}
+.addFeedback_container input {
+  width: 80%;
 }/*# sourceMappingURL=index.css.map */

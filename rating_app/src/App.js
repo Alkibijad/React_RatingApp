@@ -1,13 +1,14 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import { Route, Routes } from "react-router-dom";
+import { useState } from "react";
 
 import AverageRate from "./components/AverageRate";
 import RatingText from "./components/RatingText";
 import Ratings from "./components/ratings/RatingList";
 
 import FeedbackData from "./feedbackData/Feedback";
-import { useState } from "react";
+import AddFeedbackFrom from "./components/addFeedback/Feedback";
 
 function App() {
   const [feedback, setFeedback] = useState(FeedbackData);
@@ -37,6 +38,7 @@ function App() {
             <Ratings feedback={feedback} handleDelete={deleteFeedback} />
           }
         />
+        <Route path="/AddFeedback" element={<AddFeedbackFrom/> } />
       </Routes>
     </div>
   );
