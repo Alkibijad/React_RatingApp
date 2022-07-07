@@ -25,8 +25,8 @@ function AverageRate({ feedback }) {
 
 
   return (
-    <div className="average_num">
-      <p>The average num of your ratings is {isNaN(average)? 0 : average}</p>
+    <div className="average_rate">
+      <p>The average number of your ratings is {isNaN(average)? 0 : average}</p>
     </div>
   );
 }

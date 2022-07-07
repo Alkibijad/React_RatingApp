@@ -1,7 +1,21 @@
-function FeedbackSubmit({ disabled }) {
+import React from "react";
+import FeedbackData from "../../feedbackData/Feedback";
+
+
+
+
+
+function FeedbackSubmit({ disabled, submitBTN, setIsClicked }) {
+
+
+  function handleClick() { 
+      setIsClicked(true)
+  }
+
+  
   return (
     <div className="feedback_submit">
-      <button disabled={disabled}>Submit</button>
+      <button className={submitBTN} disabled={disabled} onClick={ handleClick } >Submit</button>
     </div>
   );
 }
