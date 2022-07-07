@@ -22,6 +22,7 @@ function Feedback() {
     if (isClicked === true) {
       FeedbackData.push(newFeedback);
       console.log(FeedbackData);
+     
     }
   }, [isClicked]);
 
